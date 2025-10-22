@@ -42,8 +42,5 @@
     "src/renderer.js",
     "src/util.js",
     "src/core.js"
-  ],
-  "publishConfig": {
-    "registry": "https://artifacts.cibseven.org/repository/npm-hosted/"
-  }
+  ]
 }
