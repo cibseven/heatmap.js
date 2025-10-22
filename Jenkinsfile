@@ -4,6 +4,6 @@
 
 standardNPMPipeline(
     npmCredentialsId: 'credential-cibseven-artifacts-npmrc',
-    npmDevRegistry: 'https://artifacts.cibseven.org/repository/npm-hosted-dev',
+    npmDevRegistry: 'https://artifacts.cibseven.org/repository/npm-hosted',
     npmReleaseRegistry: 'https://artifacts.cibseven.org/repository/npm-hosted'
 )
