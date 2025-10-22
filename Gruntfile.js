@@ -16,6 +16,14 @@ module.exports = function(grunt) {
       dist: {
         src: packagejson.buildFiles,
         dest: 'dist/heatmap.js'
+      },
+      esm: {
+        options: {
+          banner: '<%= banner %>' + 'var h337 = (function() {\n',
+          footer: '\n})();\nexport default h337;'
+        },
+        src: packagejson.buildFiles,
+        dest: 'dist/heatmap.esm.js'
       }
     },
     uglify: {
@@ -28,6 +36,10 @@ module.exports = function(grunt) {
       dist: {
         src: 'dist/heatmap.js',
         dest: 'dist/heatmap.min.js'
+      },
+      esm: {
+        src: 'dist/heatmap.esm.js',
+        dest: 'dist/heatmap.esm.min.js'
       }
     },
     jshint: {

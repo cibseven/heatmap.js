@@ -277,7 +277,8 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
 
       }
 
-      img.data = imgData;
+      // Note: imgData is already a reference to img.data, so modifications are already applied
+      // Removed: img.data = imgData; (causes error in modern browsers where ImageData.data is read-only)
       this.ctx.putImageData(img, x, y);
 
       this._renderBoundaries = [1000, 1000, 0, 0];

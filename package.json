@@ -9,6 +9,13 @@
     "url": "https://www.patrick-wied.at/"
   },
   "main": "dist/heatmap.js",
+  "module": "dist/heatmap.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/heatmap.esm.js",
+      "require": "./dist/heatmap.js"
+    }
+  },
   "devDependencies": {
     "grunt": ">= 0.4.1",
     "coffee-script": ">= 1.6.3",
@@ -27,6 +34,7 @@
     "leaflet"
   ],
   "files": [
+    "dist",
     "build",
     "plugins",
     "examples",
