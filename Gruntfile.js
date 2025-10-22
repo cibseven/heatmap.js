@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: packagejson.buildFiles,
-        dest: 'build/heatmap.js'
+        dest: 'dist/heatmap.js'
       }
     },
     uglify: {
@@ -26,8 +26,8 @@ module.exports = function(grunt) {
         beautify: false
       },
       dist: {
-        src: 'build/heatmap.js',
-        dest: 'build/heatmap.min.js'
+        src: 'dist/heatmap.js',
+        dest: 'dist/heatmap.min.js'
       }
     },
     jshint: {
